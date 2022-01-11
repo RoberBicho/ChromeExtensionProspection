@@ -1,0 +1,20 @@
+{
+    "name": "Prospection Chorme Extension",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [ // 
+      {
+        "matches": ["<all_urls>"], // Consultar documentación.
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": 
+      {
+      "default_popup": "popup.html", // Lo que queremos que se habra de inicio al abrir la ventana en la extensiones.
+      "default_title": "Ntente prospection" // El título que le daremos a la venta
+      },
+      "background": {
+        "scripts": ["background.js"]
+      },
+      "permissions": ["tabs"]
+}

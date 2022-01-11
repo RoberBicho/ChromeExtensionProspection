@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  width: 300px;
+  background: #18C1EE;
+  height: 300px;
+}
+
+.container {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.save, .check, .hubspot {
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  top: 50%;
+  left: 50%;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 15px;
+  background: #e56a54;
+  border-radius: 20%;
+  cursor: pointer;
+  color: #FFFF;
+  box-shadow: 0px 25px 50px rgba(33, 33, 33, 0.25);
+}
+
+button:hover,
+button:focus {
+  color: #999;
+}
+
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid black;
+}
+
+input {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+label {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+select {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.messageHide {
+  display: none;
+}
+
+.messageBlock {
+  display: block;
+}
+
+h3 {
+  font-size: 20px;
+  color: green;
+  margin-left: 5px;
+}

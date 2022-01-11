@@ -1,0 +1,23 @@
+//const setTitle = document.getElementById("pageTitle")
+//var Pagetitle = 'No title';
+document.addEventListener('DOMContentLoaded', function () {
+    
+    document.querySelector('button').addEventListener('click', onclick, false)
+    function onclick () {
+        chrome.tabs.query({currentWindow: true, active: true},
+            function (tabs){
+                chrome.tabs.sendMessage(tabs[0].id, 'Hi', setUrl)
+            })
+    }
+
+    function setUrl(res) {
+        ////Correspondiente a si creáramos un elemento nuevo en el body, pero yo lo quiero substituir
+        const div = document.createElement('div');
+        div.textContent = `${res.urlTab}` // Este count esta en el content.js
+        document.body.appendChild(div) // Agregamos el div al body del html
+        const setUrl = document.getElementById("pageURL").innerHTML = `${res.url}`
+        //setUrl.textContent = `${res.urlTab}`
+    }
+
+
+},false)

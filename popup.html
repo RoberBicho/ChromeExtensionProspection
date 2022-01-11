@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Brand Info</title>
+</head>
+<body>
+
+  <div class="container">
+      <label>Page Title</label><br>
+      <input type="text" id="pageTitle" name="pageTitle"><br>
+
+      <label>Dominio:</label><br>
+      <input type="text" id="pageURL" name="pageURL"><br>
+
+      <label>Tipo de tiendas:</label><br>
+      <select id="stores" name="select">
+        <option value="nd" selected></option>
+        <option value="propias">Tiendas propias</option>
+        <option value="multimarcas">Tiendas multimarca</option>
+        <option value="todas">Todas las opciones</option>
+      </select> <br>
+      <label>CMS:</label><br>
+      <select id="cms" name="select">
+        <option value="nd"></option>
+        <option value="prestashop">Prestashop</option>
+        <option value="shopify">Shopify</option>
+        <option value="magento">Magento</option>
+        <option value="wocommmerce">WooCommerce</option>
+        <option value="Otro">Otro</option>
+      </select> <br>
+
+      <label>Detalles:</label><br>
+      <textarea id="details" name="textarea" rows="10" cols="25"></textarea><br>
+
+  </div>
+
+  <button id="save" class="save" >Guardar</button>
+  <button id="check" class="check">Comprobar</button>
+  <button id="hubspot" class="hubspot" >Enviar a Hubspot</button><br>
+  <h3 class="messageHide" id="message"></h3>
+
+<script src="popup.js" charset="utf-8"></script>
+</body>
+</html>
